@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let n =+prompt("enter any number")
+let str  =  String(n);
+let min = str[0]
+let max = str[0]
+for(x of str){
+    if(min>x){
+        min = x
+    }
+    if(max<x){
+        max=x
+    }
+}
+if(str.indexOf(max)<(str.indexOf(min))){
+    document.getElementById("demo").innerHTML="Max is first";
+}
+else{
+    document.getElementById("demo").innerHTML="Min is first";
+}
+    </script>
+</body>
+</html>
